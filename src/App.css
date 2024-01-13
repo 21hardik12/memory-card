@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "get-schwifty";
+  src: url(./assets/get_schwifty.ttf);
+}
+
+.home-page {
+  min-height: 100vh;
+  min-width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo>img {
+  width: 50%;
+  height: auto;
+}
+
+.difficulty,
+.utility {
+  display: flex;
+  list-style: none;
+  /* justify-content: center; */
+  gap: 2rem;
+}
+
+.difficulty {
+  margin-top: 4rem;
+  margin-bottom: auto;
+}
+
+.utility {
+  width: 100%;  
+}
+
+.utility>li:last-child {
+  margin-left: auto;
+}
+
+video.videoTag {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Place the video behind other elements */
+} 
+
+.title {
+  text-align: center;
+  color: black;
+  font-size: 10rem;
+  font-weight: bold;
+  font-family: "get-schwifty";
+}
+
+.difficulty button {
+  font-size: 3rem;
+  width: 5em;
+  height: 2em;
+  font-family: "get-schwifty";
+  font-weight: bold;
+  background-color: black;  
+  color: white;
+}
+
+.utility button {  
+  background-color: green;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+}
+
+.utility img {
+  filter: invert(68%) sepia(54%) saturate(426%) hue-rotate(52deg) brightness(96%) contrast(96%);
+}
